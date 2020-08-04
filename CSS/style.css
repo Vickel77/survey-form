@@ -1,0 +1,64 @@
+* {padding:0;
+			margin: 0;
+		}
+		body{background: -webkit-linear-gradient(45deg, #fcfc00,#00fcfc);
+			background: -webkit-linear-gradient(45deg, #fdfdfd, #dedede);
+			height: 100vh;
+			overflow: hidden;
+
+		}
+		.container {background: -webkit-linear-gradient( 45deg, rgba(0, 0, 0, 0.9), rgba(0,0,0,.5)),url('../images/bg.jpg');
+			background-size: cover;
+			height: 95vh;
+			width: 90%;
+			margin: auto;
+			margin-top:1%;
+			color: #fff;
+			font-family: 'calibri';
+			overflow: hidden;
+			display: grid;
+			grid-template-columns: 1.5fr 1fr;
+			border-radius: 5px;
+		}
+		.logo {filter: grayscale(0%);}
+		header {font-family:'century gothic'; font-weight: bolder; color:#fff; margin-top:30%; }
+        #description {font-family:'dotum'; color:#fdfdfd; font-style: italic;}
+
+		#survey-form {
+			background:-webkit-linear-gradient(45deg, rgba(0,0,0,.7),rgba(0,0,0,1));
+			color: white;
+			width: 100%;
+			padding: 10px 20px;
+			font-family:'century gothic';
+		}
+		#survey-form * {margin:4px;}
+		#survey-form input { padding: 2px; font-size: 0.9em; height: 15px; position: relative;}	
+		.input {color: #fff; width: 90%; background: rgba(0,0,0,0); border: none; border-bottom: #888 2px dotted;}
+		.input:hover {background: rgba(255,255,255,0); border-bottom: #ddd 2px solid; transition: 0.5s;}
+		.input:active {background: rgba(255,255,255,0); border-bottom: #ddd 2px solid; transition: 0.5s;}
+		select{ background-color:#005757; color: #fff;  width:90%; padding: 0%; margin:0px; font-family:'century gothic';
+		font-size: 1em; border-radius: 5px;}  
+		button {background-color: #fff; color: #005757;
+			padding: 5px; text-align: center;}
+		button:active {background:-webkit-linear-gradient(#333,transparent); color: #fff;}
+		textarea {border-radius: 10px; width: 80%; height:10%; border:none; padding: 10px;}
+
+		@media screen and (max-width: 600px){
+            body{overflow: scroll; height: 100%;}
+			.container {
+				height:100% ;
+                display: block;
+                text-align: center;
+                font-size: .7em;
+            }
+            .logo{transform: scale(.6);}
+            header {font-family:'candara'; font-weight: bold; color:#fff; margin-top:5px; }
+            #survey-form {
+                background:-webkit-linear-gradient(45deg, rgba(0,0,0,.7),rgba(0,0,0,1));
+                color: white;
+                width: 100%;
+                margin-top:15px;
+                padding: 10px 0px;
+                font-family:'Eras ITC';
+            }
+		}
